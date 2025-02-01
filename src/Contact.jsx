@@ -19,7 +19,7 @@ const Contact = ({isHome}) => {
     
     try {
       setLoading(true);
-      const response = await axios.post("http://localhost:5000/api/contact",{name,email,message});
+      const response = await axios.post("https://church-backend-five.vercel.app/api/contact",{name,email,message});
       setLoading(false);
       setAlertMessage(response.data.message);
   
