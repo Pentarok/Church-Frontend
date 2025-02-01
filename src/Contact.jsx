@@ -24,7 +24,7 @@ const Contact = ({isHome}) => {
       setAlertMessage(response.data.message);
   
       clearAlert(4000);
-      console.log(response)
+   
     } catch (error) {
       setLoading(false);
     // Extract error message safely
