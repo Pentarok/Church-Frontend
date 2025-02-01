@@ -32,9 +32,6 @@ function ImageSlider({ data }) {
     ),
   };
 
-  const handleOpenInNewTab = (url) => {
-    window.open(url, "_blank", "noopener,noreferrer");
-  };
 
   return (
     <div className="w-3/4 m-auto">
@@ -64,12 +61,14 @@ function ImageSlider({ data }) {
                     {currentIndex === index ? "View less" : "View more"}
                   </button>
                   {d.video_url && (
-                    <button
+                    <a
                       className="bg-black text-white text-md px-6 py-1.5 rounded-xl hover:bg-slate-600"
-                      onClick={() => handleOpenInNewTab(d.video_url)}
+                     href={d.video_url}
+                     target="_blank"
                     >
+                     
                       Watch Sermon
-                    </button>
+                    </a>
                   )}
                 </div>
               </div>
