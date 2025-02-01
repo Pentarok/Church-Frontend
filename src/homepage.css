@@ -1,0 +1,24 @@
+.events-btn{
+float: right;
+   
+  
+}
+
+.events-btn button{
+    margin-top: 5px;
+    background-color: aqua;
+    padding: 12px;
+    margin-right: 10px;
+    margin-bottom: 8px;
+    color:black;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.events-btn button:hover{
+    background-color: black;
+    color: aqua;
+    cursor: pointer;
+    scale: 1.08;
+}
