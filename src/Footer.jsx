@@ -52,13 +52,13 @@ const Footer = () => {
           <FaXTwitter />
         </a>
       </div>
-      <div className="flex flex-col items-center  md:grid md:grid-cols-2">
-            <div className="text-white flex sm:w-full  justify-center items-center">
+      <div className="flex flex-col   md:grid md:grid-cols-2">
+            <div className="text-white flex sm:w-full  ">
              <ContactMini/>
             </div>
 
             <div className="flex flex-col">
-              <h1 className="font-bold text-2xl text-justify">Qick Links</h1>
+              <h1 className="font-bold text-2xl text-justify pt-1">Qick Links</h1>
               {Links.map((link,i)=><Link to={link.path} className="text-justify hover:text-indigo-400 ">{link.name}</Link>)}
             </div>
             </div>
