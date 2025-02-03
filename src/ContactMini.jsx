@@ -15,11 +15,12 @@ const ContactMini = () => {
               <MdCall color='green' className='w-15 h-15 rounded-full border bg-white '/>
               <p className="pb-1">{contact}</p>
             </div>)}
-            <div className="flex gap-1 items-center">
-            < FaMapMarkerAlt  />
-            <p className="pb-1">Along Wembley road near Bravin barracks</p>
-            </div>
-           <div className="flex gap-1 items-center">
+            <div className="inline-flex items-center space-x-1 justify-center">
+  <FaMapMarkerAlt className="text-lg" />
+  <span>Along Wembley road near Bravin barracks</span>
+</div>
+
+           <div className="flex gap-1 items-center ">
             <MdEmail />
             <p>info@gloryvine.co.ke</p>
            </div>

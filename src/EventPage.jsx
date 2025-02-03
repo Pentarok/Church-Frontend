@@ -35,21 +35,21 @@ const EventPage = () => {
     </h2>
     </div>
     <div className='border-b border-slate-500'>
-        <h2 className='font-bold text-lg pb-1'>Date & Time</h2>
+        <h2 className='font-bold text-lg  pb-2 md:pb-1'>Date & Time</h2>
         <div className='flex gap-1 pb-2'>
                 <FaCalendarAlt style={{ fontSize: '20px', color: 'black' }} />
                 <p className=''>{getProperDay(event.DAY)}</p>
                 </div>
-                  <div className='flex gap-1'>
+                  <div className='flex gap-1 pb-2'>
                   <FaClock style={{ fontSize: '20px', color: 'black' }} />
                   <p>{getProperTime(event.TIME)}</p>
                   
                   </div>
-                  <p>Lasts approximately <span className='pl-2'>{event.DURATION}</span></p>
+                  <p className='py-1'>Lasts approximately <span className='pl-2'>{event.DURATION}</span></p>
     </div>
     <div className='mt-3 md:absolute right-4 bottom-20 bg-slate-300 rounded-lg p-5'>
       <p>For any queries contact:</p>
-      <div className='flex pb-1'>
+      <div className='flex pb-2'>
         <MdEmail size={24} color="black" />
         <span style={{ marginLeft: "8px" }}>mak@gmail.com</span>
       </div>
@@ -57,8 +57,10 @@ const EventPage = () => {
         <MdCall size={24} color="green" />
         <span style={{ marginLeft: "8px" }}>+254705787654</span>
       </div>
-      <p></p>
-        <Link className="p-2 bg-black  text-white rounded-lg hover:bg-slate-600">Register and join us</Link>
+       <div className='mt-5'>
+       <Link className="p-2  bg-black  text-white rounded-lg hover:bg-slate-600">Register and join us</Link>
+       </div>
+       
     </div>
   </div>
     </div>
