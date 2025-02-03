@@ -1,14 +1,14 @@
 import React from 'react'
 import { FaChurch } from 'react-icons/fa';
 import { FaWallet } from 'react-icons/fa';
-import Giving from "./assets/giving.jpg"
+
 import { AiOutlineCreditCard } from 'react-icons/ai';
 const Give = () => {
   return (
     <div className='p-4'>
         <div>
 <div className=''>
-    <img src={Giving} className=" md:h-[500px] w-full rounded-xl"  alt="" />
+    <img src="https://res.cloudinary.com/dtrskzurx/image/upload/v1738576216/giving_jeofws.jpg" className=" md:h-[500px] w-full rounded-xl"  alt="" />
 </div>
             <div className='p-5'>
                 <p>
