@@ -14,6 +14,11 @@ const Contact = ({isHome}) => {
       setAlertMessage("");
     }, time);
   }
+  const ResetForm = ()=>{
+    setEmail("");
+    setMessage("");
+    setName("");
+  }
   const handleSubmit = async(e)=>{
     e.preventDefault();
     
@@ -22,8 +27,9 @@ const Contact = ({isHome}) => {
       const response = await axios.post("https://church-backend-five.vercel.app/api/contact",{name,email,message},{withCredentials:true});
       setLoading(false);
       setAlertMessage(response.data.message);
-  
+      ResetForm();
       clearAlert(4000);
+
    
     } catch (error) {
       setLoading(false);
