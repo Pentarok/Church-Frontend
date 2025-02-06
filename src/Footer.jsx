@@ -59,7 +59,7 @@ const Footer = () => {
 
             <div className="flex flex-col">
               <h1 className="font-bold text-2xl text-justify pt-1">Qick Links</h1>
-              {Links.map((link,i)=><Link to={link.path} className="text-justify hover:text-indigo-400 ">{link.name}</Link>)}
+              {Links.map((link,i)=><Link to={link.path} className="text-justify hover:text-indigo-400 py-1 ">{link.name}</Link>)}
             </div>
             </div>
       <p style={{ marginTop: "10px" }}>© 2025 GloryVine. All rights reserved.</p>

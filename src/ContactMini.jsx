@@ -9,7 +9,7 @@ const ContactMini = () => {
       ]
   return (
     <div>
-         <h2 className="text-2xl font-bold  pb-2 text-center md:text-left">Contact Us</h2>
+         <h2 className="text-2xl font-bold  pb-2  text-left">Contact Us</h2>
               {contacts.map((contact,i)=>
               <div className="flex gap-1  items-center">
               <MdCall color='green' className='w-15 h-15 rounded-full border bg-white '/>
@@ -17,7 +17,7 @@ const ContactMini = () => {
             </div>)}
             <div className="inline-flex items-center space-x-1 justify-center">
   <FaMapMarkerAlt className="text-lg" />
-  <span>Along Wembley road near Bravin barracks</span>
+  <span className=''>Along Wembley road near Bravin barracks</span>
 </div>
 
            <div className="flex gap-1 items-center ">
