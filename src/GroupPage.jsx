@@ -9,9 +9,9 @@ const GroupPage = () => {
   const paragraphs = [first, second, third];
 
   return (
-    <div className='flex flex-col items-center justify-center'>
+    <div className='flex flex-col items-center justify-center w-full'>
       <h1 className='text-2xl shadow font-bold'>{name}</h1>
-      <div className='flex flex-col items-center justify-center w-[700px]'>
+      <div className='flex flex-col items-center text-sm justify-center max-w-full px-4 w-[700px]'>
         <div>
           <img src={image} className='rounded-xl shadow' alt={name} />
         </div>
